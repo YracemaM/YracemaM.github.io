@@ -95,10 +95,11 @@ main {
 
 .icons{
     display: flex;
-    width: 15px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border-radius: 50%;
     margin-left: 210px;
+    margin:auto;
     gap: 40px;
 }
 
