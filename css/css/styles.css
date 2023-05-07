@@ -1,0 +1,172 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 20;
+    padding: 20;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    }
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    scroll-behavior: smooth;
+    }
+
+.inicio {
+    display: flex;
+    gap:100px; 
+    @media (max-width: 599px) {
+        gap: 40px;
+    }
+}
+
+.lista {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 50px;
+     
+}
+
+ /*primer parrafo luego de la imagen*/
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 50;
+    padding: auto;
+    color: black; 
+    text-align: center; 
+    @media screen {
+        (max-width: 599px) 
+    } 
+    font-size: 18px;        
+}
+   
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */ /*esto es para el enunciado, de inioo y contacto*/
+
+button { /*boton de descargar cv*/
+    height: 2rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: orchid;
+    border-radius: 30px;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border: none;
+    font-size: 12px;
+    
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img{
+    width: 120px;
+    height:80px;
+   
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 210px;
+    @media (max-width: 599px) {
+        margin-left: 120px;
+    }
+}
+
+.icons {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 210px;
+    margin:auto;
+    gap: 40px;
+}
+
+.codigo {
+    background-color: orchid;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+          
+}
+
+.texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-evenly;
+    box-sizing: content-box;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: rgb(231, 232, 234);
+    text-align:justify;
+}
+
+.span{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-color: rgb(211, 179, 212);
+    text-align: justify;
+}
+
+.subtitulo{
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+}
+/* Regla de estilo para pantallas con ancho mayor o igual a 600px */
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
